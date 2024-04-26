@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+//** Variables
+
+//Colors
+$green: hsl(75, 94%, 57%);
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 20%);
+$dark-grey: hsl(0, 0%, 12%);
+$off-black: hsl(0, 0%, 8%);
+
+//Fonts
+$paragraph: 14px;
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Inter', sans-serif;
+   color: $white;
+   list-style: none;
+}
+
+body {
+   background-color: $off-black;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.card {
+   background-color: $dark-grey;
+   padding: 40px;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: clamp(345px, 90%, 375px);
+   .user-image {
+      background-color: $grey;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+         height: 90px;
+      }
+   }
+   .user-name {
+      font-size: 24px;
+      font-weight: 600;
+      margin: 20px 0 12px;
+   }
+   .user-location {
+      font-size: $paragraph;
+      font-weight: 700;
+      color: $green;
+      margin: 0 0 6px;
+   }
+   .user-bio {
+      font-size: $paragraph;
+      font-weight: 400;
+      margin: 24px 0;
+   }
+   .links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 100%;
+      .links-list__link {
+         background-color: $grey;
+         border-radius: 10px;
+         text-align: center;
+         width: 100%;
+         font-size: $paragraph;
+         font-weight: 600;
+         a {
+            text-decoration: none;
+            display: block;
+            padding: 14px 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            outline: none;
+            &:hover {
+               transition: 0.3s;
+               color: $off-black;
+               background-color: $green;
+            }
+            &:focus{
+                background-color: $green;
+                color: $off-black;
+                border: 1px solid $white    ;
+            }
+         }
+      }
+   }
+}
+
+.attribution {
+   position: absolute;
+   bottom: 12px;
+   font-size: clamp(12px, 3vw, 14px);
+}
