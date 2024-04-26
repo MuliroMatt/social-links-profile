@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution]([https://your-solution-url.com](https://muliromatt.github.io/social-links-profile/))
+- Solution URL: [My Solution](https://muliromatt.github.io/social-links-profile/)
 
 ## My process
 
